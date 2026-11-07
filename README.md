@@ -309,13 +309,11 @@ public interface KaryawanDAO {
 
 ---
 
-## 💻 Panduan Penggunaan Program (Antarmuka GUI)
-
-Simpan seluruh hasil tangkapan layar program Anda ke dalam folder `docs/screenshots/` dengan penamaan file berikut:
+## 💻 Panduan Penggunaan Program
 
 ### 🔐 1. Halaman Login Multi-User
-Gerbang autentikasi tunggal bagi Admin, Supervisor, dan Staff:
-![Halaman Login Multi-User]
+Gerbang autentikasi tunggal bagi Admin, Supervisor, dan Staff:  
+- **[Halaman Login Multi-User]**
 <img width="972" height="619" alt="image" src="https://github.com/user-attachments/assets/414e2860-fe9c-4d28-abac-bf58cc75e983" />  
  Bagian ini adalah halaman login utama saat pengguna menggunakan program. Pengguna akan diminta untuk memasukkan email dan kata sandi akun karyawan yang sudah didaftarkan oleh admin perusahaan.
 
@@ -396,7 +394,7 @@ Supervisor dapat memverifikasi kehadiran karyawan dengan melihat bukti presensi 
   Halaman utama akun Staff. Bagian ini berisi keterangan singkat mengenai informasi akun, jadwal shift, status presensi, dan status pengajuan CrunchPoints.
 
 
-* **Form Presensi Clock-In / Clock-Out (Upload Bukti Foto SHA-256):**
+* **Form Presensi Check-in & Check-out:**
   <img width="1366" height="737" alt="image" src="https://github.com/user-attachments/assets/5082318b-1208-4979-913d-d23354fa858f" />  
   Halaman ini berfungsi untuk karyawan melakukan absensi. Karyawan akan diminta untuk memasukkan foto bukti kehadiran saat sedang presensi Check-In dan Check-Out. Halaman ini juga terdapat tabel daftar yang berisi riwayat Presensi yang pernah lakukan karyawan.
 
