@@ -374,6 +374,13 @@ Menu ini berfungsi agar Supervisor dapat memantau status kehadiran karyawan.
 Supervisor dapat memverifikasi kehadiran karyawan dengan melihat bukti presensi mereka, termasuk menyetujui dan menolak status kehadiran karyawan yang terlambat, tidak hadir karena izin/sakit, ataupun presensi tidak sesuai (di luar area lingkungan kerja).
 
 
+* **Log Aktivitas:**
+  <img width="1677" height="958" alt="Screenshot 2026-11-07 231136" src="https://github.com/user-attachments/assets/a218e324-d98b-4a62-b7cc-a50c601012bf" />
+  Menu ini berfungsi sebagai Pusat Verifikasi Log Aktivitas Karyawan bagi Supervisor untuk meninjau, menyetujui, atau meminta revisi atas laporan kerja harian yang dikirimkan oleh tim.
+  Pada bagian ini, supervisor dapat meninjau tabel daftar aktivitas karyawan mencakup rincian tugas, catatan, foto, dan status lalu memberikan tanggapan melalui panel kiri untuk menyetujui laporan (Verifikasi Log) atau meminta melakukan revisi kepada karyawan terkait. Supervisor juga dapat melakukan pencarian log aktivitas melalui kolom pencarian di sebelah kanan.
+
+
+
 * **Evaluasi Performa & Distribusi CrunchPoints Staf:**
   <img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/706c3d33-ee9f-4ec6-8cfc-9e37485a7665" />  
   Pada bagian ini berisi form pemberian point dan daftar riwayat evaluasi poin karyawan.  
