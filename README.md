@@ -10,10 +10,20 @@
 
 ## 📌 Deskripsi Singkat Proyek
 
-**CrunchShift** merupakan sistem informasi manajemen operasional terintegrasi berbasis **Java Swing (GUI)** dan **MySQL** yang dirancang khusus untuk industri manufaktur *Fast-Moving Consumer Goods* (FMCG) dengan sistem kerja bergilir (*shift work*). Sistem ini mengintegrasikan pencatatan kehadiran (*attendance tracking*), dokumentasi serah terima pekerjaan harian lintas-regu (*daily work log & handover*), serta sistem gamifikasi apresiasi kerja (**CrunchPoints**) dalam satu basis data relasional terpusat.
+**CrunchShift** merupakan sistem informasi manajemen operasional terintegrasi berbasis **Java Swing (GUI)** dan **MySQL** yang dirancang khusus untuk industri manufaktur *Fast-Moving Consumer Goods* (FMCG) dengan sistem kerja bergilir (*shift work*). Sistem ini mengintegrasikan pengelolaan jadwal kerja (*shift scheduling*), pencatatan kehadiran (*attendance tracking*), dokumentasi serah terima pekerjaan harian lintas-regu (*daily work log & handover*), serta sistem gamifikasi apresiasi kerja (**CrunchPoints**) ke dalam satu basis data relasional terpusat.
 
-Dikembangkan dengan menerapkan arsitektur bersih **Model-View-Controller (MVC)** dan pola perancangan **Data Access Object (DAO)**, CrunchShift memastikan integritas data operasional, mencegah kecurangan presensi melalui validasi kriptografi hash SHA-256 pada foto kehadiran, serta mendorong terciptanya lingkungan kerja yang transparan, produktif, dan terstruktur sesuai target **SDGs 8 (Pekerjaan Layak dan Pertumbuhan Ekonomi)**.
+Dikembangkan dengan menerapkan prinsip utama **Pemrograman Berorientasi Objek (OOP)** melalui arsitektur bersih **Model-View-Controller (MVC)** dan pola perancangan **Data Access Object (DAO)**, CrunchShift menjamin integritas serta keamanan data operasional. Sistem ini turut dilengkapi dengan mekanisme *anti-fraud* melalui validasi kriptografi *hash* **SHA-256** pada bukti foto kehadiran guna mencegah manipulasi presensi di lapangan.
 
+Proyek ini dirancang untuk mendukung pencapaian **Tujuan Pembangunan Berkelanjutan (SDGs) Poin ke-8**, yakni *Decent Work and Economic Growth* (Pekerjaan Layak dan Pertumbuhan Ekonomi), dengan fokus pada peningkatan produktivitas operasional melalui inovasi teknologi serta penciptaan lingkungan kerja yang layak, adil, dan terorganisasi. Dalam industri manufaktur yang beroperasi secara berkesinambungan, ketidakjelasan pembagian beban kerja, miskoordinasi saat pergantian regu, serta kurangnya pengakuan atas inisiatif pekerja sering kali menurunkan keselamatan dan motivasi kerja.
+
+Melalui **CrunchShift**, nilai-nilai **SDGs 8** diwujudkan secara konkret ke dalam tiga aspek utama:
+
+1. **Lingkungan Kerja yang Teratur dan Adil (*Decent & Structured Working Conditions*):**  
+   Fitur *Shift Scheduling* dengan deteksi bentrok otomatis serta *Attendance Tracking* memastikan pembagian jam kerja bergilir berjalan secara proporsional, terdokumentasi dengan jelas, dan menghindarkan pekerja dari tumpang-tindih penugasan.
+2. **Efisiensi dan Keberlanjutan Produktivitas (*Economic Productivity through Operational Continuity*):**  
+   Fitur *Daily Work Log & Handover* memfasilitasi penyampaian informasi pekerjaan serta kendala teknis antar-shift secara terstruktur, sehingga meminimalkan kesalahan produksi (*human error*) dan menjaga kelancaran rantai operasional pabrik.
+3. **Apresiasi Kerja yang Objektif dan Transparan (*Fair Recognition & Employee Empowerment*):**  
+   Melalui fitur **CrunchPoints**, setiap kontribusi positif, kedisiplinan, dan inisiatif pemecahan masalah oleh staf di lapangan dicatat serta dievaluasi secara objektif oleh Supervisor berdasarkan kategori yang terstandarisasi. Hal ini mendukung pengambilan keputusan manajemen berbasis data (*data-driven evaluation*) sekaligus mendorong budaya kerja yang sehat, kompetitif, dan menghargai peran setiap karyawan.
 ---
 
 ## 🧩 Fitur Utama Berdasarkan Peran (Role)
