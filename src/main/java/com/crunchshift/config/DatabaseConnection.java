@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DatabaseConnection {
 
-    private static final String DB_URL = "jdbc:mysql://127.0.0.1:3306/crunchshift_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Makassar&connectTimeout=3000";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/crunchshift_db";
     private static final String DB_USER = "root";
     private static final String DB_PASS = "";
 
