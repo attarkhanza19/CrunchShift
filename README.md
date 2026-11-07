@@ -390,7 +390,7 @@ Program ini dikembangkan oleh mahasiswa Program Studi Sistem Informasi, Fakultas
 
 | No | Nama Lengkap | NIM | Peran Dalam TIm  |
 | :---: | :--- | :---: | :--- |
-| **1** |**Muhammad Attar Khanza Habibillah** | `2509116006` | ** ** |
-| **2** |**Evan Setiawan** | `2509116036` | **  ** |
-| **3** |**Az Zahra Imsawati Sugianto** | `2509116062` | ** ** |
-| **4** |**Arizky Saputra** | `2509116088` | ** GUI Design** |
+| **1** |**Muhammad Attar Khanza Habibillah** | `2509116006` | **Data & System Analyst** |
+| **2** |**Evan Setiawan** | `2509116036` | **Project Leader** |
+| **3** |**Az Zahra Imsawati Sugianto** | `2509116062` | **UI/UX Designer & Lead Tech Writer** |
+| **4** |**Arizky Saputra** | `2509116088` | **GUI Design** |
