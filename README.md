@@ -33,7 +33,7 @@ Melalui **CrunchShift**, nilai-nilai **SDGs 8** diwujudkan secara konkret ke dal
 - **Pengelolaan Master Shift:** Konfigurasi jam operasional kerja (Shift Pagi, Shift Sore, dan Shift Malam) sebagai acuan validasi ketepatan waktu presensi.
 - **Konfigurasi Kategori CrunchPoints:** Khusus Admin Pusat, mengatur kategori kontribusi kinerja dan standar nilai acuan poin (skala 0, 25, 50, 75, 100).
 - **Monitoring Operasional Global:** Memantau riwayat presensi harian seluruh lini, status verifikasi kehadiran, dan filter/sorting data karyawan secara fleksibel.
-- **Laporan Terpadu Perusahaan:** Menghasilkan rekapitulasi data absensi, catatan aktivitas produksi, dan persebaran poin penghargaan per periode kerja.
+- **Laporan Perusahaan:** Menghasilkan rekapitulasi data absensi, catatan aktivitas produksi, dan persebaran poin penghargaan per periode kerja.
 
 ### 2. 📋 Modul Supervisor
 - **Manajemen Anggota Tim:** Memantau daftar staf pelaksana yang berada di bawah lingkup area supervisi secara dinamis.
