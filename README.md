@@ -316,33 +316,41 @@ Simpan seluruh hasil tangkapan layar program Anda ke dalam folder `docs/screensh
 ### 🔐 1. Halaman Login Multi-User
 Gerbang autentikasi tunggal bagi Admin, Supervisor, dan Staff:
 ![Halaman Login Multi-User]
-<img width="972" height="619" alt="image" src="https://github.com/user-attachments/assets/414e2860-fe9c-4d28-abac-bf58cc75e983" />
+<img width="972" height="619" alt="image" src="https://github.com/user-attachments/assets/414e2860-fe9c-4d28-abac-bf58cc75e983" />  
+ Bagian ini adalah halaman login utama saat pengguna menggunakan program. Pengguna akan diminta untuk memasukkan email dan kata sandi akun karyawan yang sudah didaftarkan oleh admin perusahaan.
 
 ---
 
 ### 🛡️ 2. Panel Kerja Role: Admin
 * **Dashboard Utama Admin:**
- <img width="1366" height="741" alt="image" src="https://github.com/user-attachments/assets/6665193c-24c5-4009-816d-39aa933148bb" />
+ <img width="1366" height="741" alt="image" src="https://github.com/user-attachments/assets/6665193c-24c5-4009-816d-39aa933148bb" />  
+ Ini adalah tampilan Dashboard utama dari akun Admin. Dashboard berisi beberapa informasi dan keterangan ringkas seperti ringkasan rekap perusahaan, tabel yang berisi detail daftar karyawan, dan menu pencarian.
 
 
 * **Manajemen Master Data Karyawan (CRUD & Status):**
-  <img width="1365" height="741" alt="image" src="https://github.com/user-attachments/assets/4dda7e11-62e0-4bbf-b2ac-357332ae07d3" />
+  <img width="1365" height="741" alt="image" src="https://github.com/user-attachments/assets/4dda7e11-62e0-4bbf-b2ac-357332ae07d3" />  
+  Pada menu Karyawan / Tim, Menu ini berfungsi agar admin dapat menambahkan Data karyawan baru, maupun mengubah informasi dari data karyawan yang sudah ada. Admin dapat menaftarkan data karyawan seperti nama lengkap, alamat email, kata sandi, Role/jabatan, dan divisi/area pekerjaan karyawan tersebut.
 
 
 * **Manajemen Master Data Shift Operasional:**
-  <img width="1366" height="739" alt="image" src="https://github.com/user-attachments/assets/34bd49b6-c6ac-4bfa-9178-c43c44a78342" />
+  <img width="1366" height="739" alt="image" src="https://github.com/user-attachments/assets/34bd49b6-c6ac-4bfa-9178-c43c44a78342" />  
+  Di Menu Master Shift berfungsi untuk admin mengelola jenis shift kerja yang ada di dalam perusahaan, seperti nama shift beserta jam masuk dan keluar shift tersebut. Admin juga dapat menghapus jadwal shift yang sudah ada jika diperlukan dengan memilih shift yang diinginkan dalam tabel daftar shift.
 
 * **Manajemen Kategori poin:**
-  <img width="1366" height="739" alt="image" src="https://github.com/user-attachments/assets/d70f2edf-c688-4f58-845d-bd9bed72c04e" />
+  <img width="1366" height="739" alt="image" src="https://github.com/user-attachments/assets/d70f2edf-c688-4f58-845d-bd9bed72c04e" />  
+  Pada menu ini, admin dapat menambahkan nilai dan kategori CrunchPoints yang nantinya akan dapat diberikan kepada karyawan atas kontribusi mereka. Admin dapat memasukkan nama kategori, jumlah poin, dan keterangan yang berisi deskripsi acuan Supervisor dalam memberikan CrunchPoints kepada staff.
 
 * **Monitoring:**
-  <img width="1366" height="737" alt="image" src="https://github.com/user-attachments/assets/ab907714-e294-45c9-acfc-52ed4af144ab" />
+  <img width="1366" height="737" alt="image" src="https://github.com/user-attachments/assets/ab907714-e294-45c9-acfc-52ed4af144ab" />  
+  Menu ini berisi keterangan mengenai monitoring status presensi karyawan.
 
 * **Laporan:**
-  <img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/6973d702-0a61-4484-96c0-c7a1d7b7e151" />
+  <img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/6973d702-0a61-4484-96c0-c7a1d7b7e151" />  
+  Menu ini berfungsi agar admin bisa melihat dan mengunduh laporan perusahaan. Admin bisa melihat rekapitulasi tersebut dalam rentang periode tertentu (misal per-minggu / per-bulan) untuk keperluan laporan bulanan perusahaan.
 
 * **profil:**
-  <img width="1365" height="717" alt="image" src="https://github.com/user-attachments/assets/7887de85-eb49-49e6-8fab-9cb36cc09c39" />
+  <img width="1365" height="717" alt="image" src="https://github.com/user-attachments/assets/7887de85-eb49-49e6-8fab-9cb36cc09c39" />  
+  Berisi informasi terkait akun yang digunakan pengguna login saat ini, seperti nama, email, peran, dan lain-lain. Pengguna juga dapat mengubah kata sandi akun pada menu ini jika diinginkan.
 
 
 
@@ -351,36 +359,48 @@ Gerbang autentikasi tunggal bagi Admin, Supervisor, dan Staff:
 
 ### 📋 3. Panel Kerja Role: Supervisor
 * **Dashboard Utama Supervisor:**
- <img width="1366" height="740" alt="image" src="https://github.com/user-attachments/assets/eb0c7056-5919-47f0-af21-30c6e8a4e87b" />
+ <img width="1366" height="740" alt="image" src="https://github.com/user-attachments/assets/eb0c7056-5919-47f0-af21-30c6e8a4e87b" />  
+ Tampilan utama ketika pengguna login sebagai supervisor. Pada menu Dashboard berisi ringkasan seperti Panduan penggunaan untuk supervisor, dan tabel Daftar Tim atau Karyawan dalam perusahaan. Supervisor juga bisa menggunakan menu pencarian untuk mencari karyawan berdasarkan nama, id, peran, ataupun status karyawan tersebut.
 
 
 * **Penjadwalan Shift Staf & Deteksi Konflik Jadwal:**
-<img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/ba3f3641-3fa7-491e-9fc3-b371ec394ba5" />
+<img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/ba3f3641-3fa7-491e-9fc3-b371ec394ba5" />  
+Menu ini berfungsi sebagai halaman penugasan jadwal kerja kepada karyawan. Supervisor akan memilih karyawan yang ingin ditugaskan, lalu menentukan jenis shift kerja dan tanggal shift kerja tersebut. Supervisor juga dapat mengubah Shift kerja karyawan yang sudah ditugaskan dengan memilih nama karyawan dari tabel daftar yang ada di halaman ini.
 
 
 * **Verifikasi Presensi:**
-  <img width="1365" height="738" alt="image" src="https://github.com/user-attachments/assets/477f5347-fabc-4870-bd8f-687b1999ac8b" />
+  <img width="1365" height="738" alt="image" src="https://github.com/user-attachments/assets/477f5347-fabc-4870-bd8f-687b1999ac8b" />  
+Menu ini berfungsi agar Supervisor dapat memantau status kehadiran karyawan.  
+Supervisor dapat memverifikasi kehadiran karyawan dengan melihat bukti presensi mereka, termasuk menyetujui dan menolak status kehadiran karyawan yang terlambat, tidak hadir karena izin/sakit, ataupun presensi tidak sesuai (di luar area lingkungan kerja).
 
 
 * **Evaluasi Performa & Distribusi CrunchPoints Staf:**
-  <img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/706c3d33-ee9f-4ec6-8cfc-9e37485a7665" />
+  <img width="1366" height="738" alt="image" src="https://github.com/user-attachments/assets/706c3d33-ee9f-4ec6-8cfc-9e37485a7665" />  
+  Pada bagian ini berisi form pemberian point dan daftar riwayat evaluasi poin karyawan.  
+   Supervisor dapat memberikan poin apresiasi kepada karyawan yang telah memberikan kontribusi dengan baik dan sesuai.  
+  Supervisor memilih karyawan yang ingin diberikan CrunchPoint atau Evaluasi dari kolom Staff Penerima, kemudian memilih kategori poin yang juga berisi keterangan poin yang akan diperoleh karyawan, kemudian mengisi deskripsi kontribusi yang telah dilakukan karyawan bersangkutan. Dengan begitu Karyawan yang diinginkan akan memperoleh poin apresiasi tersebut.  
+  Pada menu ini, Supervisor juga dapat melihat pengajuan Crunchpoints yang dilakukan oleh karyawan, lalu dapat menentukan apakah pengajuan tesebut ingin disetuji atau ditolak berdasarkan bukti log aktivitas karyawan tersebut.
 
 ---
 
 ### 👷 4. Panel Kerja Role: Staff
 * **Dashboard Utama Staff:**
-  <img width="1366" height="739" alt="image" src="https://github.com/user-attachments/assets/b33b3ec8-0145-4b55-8e85-3391cd0a3097" />
+  <img width="1366" height="739" alt="image" src="https://github.com/user-attachments/assets/b33b3ec8-0145-4b55-8e85-3391cd0a3097" />  
+  Halaman utama akun Staff. Bagian ini berisi keterangan singkat mengenai informasi akun, jadwal shift, status presensi, dan status pengajuan CrunchPoints.
 
 
 * **Form Presensi Clock-In / Clock-Out (Upload Bukti Foto SHA-256):**
-  <img width="1366" height="737" alt="image" src="https://github.com/user-attachments/assets/5082318b-1208-4979-913d-d23354fa858f" />
+  <img width="1366" height="737" alt="image" src="https://github.com/user-attachments/assets/5082318b-1208-4979-913d-d23354fa858f" />  
+  Halaman ini berfungsi untuk karyawan melakukan absensi. Karyawan akan diminta untuk memasukkan foto bukti kehadiran saat sedang presensi Check-In dan Check-Out. Halaman ini juga terdapat tabel daftar yang berisi riwayat Presensi yang pernah lakukan karyawan.
 
 
 * **Pencatatan Log Aktivitas Harian & Catatan Handover:**
-  <img width="1366" height="740" alt="image" src="https://github.com/user-attachments/assets/e1369ed2-3b5e-45fb-8895-22eb6350f43c" />
+  <img width="1366" height="740" alt="image" src="https://github.com/user-attachments/assets/e1369ed2-3b5e-45fb-8895-22eb6350f43c" />  
+  Pada bagian ini, karyawan dapat membuat laporan aktivitas yang sudah dilakukan selama bekerja dengan mencantumkan deskripsi ringkasan kegiatan, catatan, dan bukti foto aktivitas yang sudah dilaksanakan.
 
 * **Menu Crunchpoints:**
-<img width="1366" height="741" alt="image" src="https://github.com/user-attachments/assets/d046f842-fb9c-4e8e-aa16-56715b5038d4" />
+<img width="1366" height="741" alt="image" src="https://github.com/user-attachments/assets/d046f842-fb9c-4e8e-aa16-56715b5038d4" />  
+Pada menu ini, karyawan diberikan hak untuk mengajukan CrunchPoint (Poin apresiasi) kepada atasan. Staff dapat memilih jenis kontribusi yang sudah dilakukan, dan kemudian pengajuan poin tersebut akan dikirimkan kepada supervisor untuk ditinjau. Jika pengajuan disetujui, maka status pengajuan akan berubah menjadi "Disetujui" dan CrunchPoint akan diterima oleh karyawan.
 
 ---
 
@@ -388,9 +408,9 @@ Gerbang autentikasi tunggal bagi Admin, Supervisor, dan Staff:
 
 Program ini dikembangkan oleh mahasiswa Program Studi Sistem Informasi, Fakultas Teknik, Universitas Mulawarman:
 
-| No | Nama Lengkap | NIM | Peran Dalam TIm  |
-| :---: | :--- | :---: | :--- |
-| **1** |**Muhammad Attar Khanza Habibillah** | `2509116006` | **Data & System Analyst** |
-| **2** |**Evan Setiawan** | `2509116036` | **Project Leader** |
-| **3** |**Az Zahra Imsawati Sugianto** | `2509116062` | **UI/UX Designer & Lead Tech Writer** |
-| **4** |**Arizky Saputra** | `2509116088` | **UI/UX Designer & Quality Assurance (QA)** |
+| No | Nama Lengkap | NIM | Peran Dalam TIm  | Deskripsi kontribusi |
+| :---: | :--- | :---: | :--- | :--- |
+| **1** |**Muhammad Attar Khanza Habibillah** | `2509116006` | **Data & System Analyst** | Berperan sebagai konseptor serta bertanggung jawab dalam perancangan Entity Relationship Diagram (ERD), penyusunan struktur database, dan pengelolaan hubungan antarentitas. <br>Selain itu, berkontribusi dalam pengintegrasian database dengan sistem aplikasi
+| **2** |**Evan Setiawan** | `2509116036` | **Project Leader** | Berperan sebagai konseptor serta bertanggung jawab dalam pengembangan logika dan kode program aplikasi CrunchShift. <br>Melakukan implementasi fungsi-fungsi utama sistem, menyusun flowchart untuk menggambarkan alur kerja program, serta memastikan proses dan fitur aplikasi berjalan sesuai kebutuhan.
+| **3** |**Az Zahra Imsawati Sugianto** | `2509116062` | **UI/UX Designer & Lead Tech Writer** | Berperan sebagai konseptor serta bertanggung jawab dalam penyusunan laporan dan dokumentasi proyek. <br>Selain itu, berkontribusi dalam perancangan dan pengembangan Graphical User Interface (GUI), meliputi desain tampilan, tata letak komponen, dan penyusunan antarmuka aplikasi agar mudah digunakan.
+| **4** |**Arizky Saputra** | `2509116088` | **UI/UX Designer & Quality Assurance (QA)** | sebagai konseptor serta bertanggung jawab dalam pembuatan Use Case Diagram untuk menggambarkan interaksi pengguna dengan sistem. <br>Selain itu, berkontribusi dalam perancangan dan pengembangan GUI, termasuk penyusunan komponen antarmuka dan penyesuaian tampilan dengan kebutuhan fungsional aplikasi
