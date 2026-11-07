@@ -48,7 +48,7 @@ Melalui **CrunchShift**, nilai-nilai **SDGs 8** diwujudkan secara konkret ke dal
 - **Presensi Masuk & Keluar Anti-Fraud:** Melakukan *Clock-In* dan *Clock-Out* disertai pengunggahan bukti visual kehadiran fisik yang diverifikasi keunikannya menggunakan algoritma *hash* SHA-256 guna mencegah penggunaan foto palsu atau duplikasi.
 - **Pengajuan Izin Kerja:** Mengajukan permohonan izin atau sakit disertai keterangan pendukung kepada supervisor terkait.
 - **Pencatatan Log Kerja & Handover:** Mengisi ringkasan pekerjaan harian, mencatat kendala lini produksi, menyertakan bukti dokumentasi kegiatan, dan menuliskan catatan serah terima untuk regu shift selanjutnya.
-- **Dompet & Riwayat CrunchPoints:** Memantau akumulasi perolehan poin penghargaan, riwayat apresiasi, dan catatan evaluasi dari supervisor secara transparan.
+- **Pengajuan & Riwayat CrunchPoints:** Memantau akumulasi perolehan poin penghargaan, mengajukan poin kepada supervisor, riwayat apresiasi, dan catatan evaluasi dari supervisor secara transparan.
 
 ---
 
