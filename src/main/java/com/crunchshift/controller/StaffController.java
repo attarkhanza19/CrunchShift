@@ -30,10 +30,6 @@ import java.time.LocalTime;
 import java.time.ZonedDateTime;
 import java.util.List;
 
-/**
- * Controller untuk modul Staff Mandiri: Presensi digital WITA, anti-fraud foto SHA-256,
- * handover log harian, dan pantauan Crunch Points gamifikasi.
- */
 public class StaffController {
 
     private final JadwalShiftDAO jadwalShiftDAO;

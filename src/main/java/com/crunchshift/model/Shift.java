@@ -2,9 +2,7 @@ package com.crunchshift.model;
 
 import java.time.LocalTime;
 
-/**
- * Entitas Master Shift operasional pabrik.
- */
+
 public class Shift {
 
     private int idShift;

@@ -1,13 +1,11 @@
 package com.crunchshift.model;
 
-/**
- * Entitas Supervisor lini/area pabrik, subclass dari Karyawan.
- */
+
 public class Supervisor extends Karyawan {
 
     private int idSupervisor;
-    private String areaTanggungJawab; // area_supervisi
-    private String shiftSupervisi; // 'Pagi', 'Sore', 'Malam'
+    private String areaTanggungJawab; 
+    private String shiftSupervisi; 
 
     public Supervisor() {
         super();

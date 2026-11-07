@@ -14,10 +14,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Implementasi DAO untuk Penjadwalan Shift Karyawan.
- * Selaras dengan tabel jadwal_shift (id_jadwal, tanggal_jadwal, karyawan_id_karyawan, shift_id_shift).
- */
+
 public class JadwalShiftDAOImpl implements JadwalShiftDAO {
 
     private static final String BASE_SELECT =
@@ -138,7 +135,7 @@ public class JadwalShiftDAOImpl implements JadwalShiftDAO {
 
     @Override
     public boolean update(JadwalShift jadwal) {
-        // Cek bentrok tanggal milik karyawan, tidak menghitung baris yang sedang diubah.
+        
         String sql = "UPDATE jadwal_shift j "
                 + "LEFT JOIN jadwal_shift konflik ON konflik.karyawan_id_karyawan = j.karyawan_id_karyawan "
                 + "AND konflik.tanggal_jadwal = ? AND konflik.id_jadwal <> j.id_jadwal "

@@ -3,9 +3,7 @@ package com.crunchshift.dao;
 import com.crunchshift.model.Karyawan;
 import java.util.List;
 
-/**
- * Interface DAO untuk entitas Karyawan dan subtipe polimorfisnya (Admin, Supervisor, Staff).
- */
+
 public interface KaryawanDAO {
 
     Karyawan authenticate(String email, String password);
@@ -28,7 +26,7 @@ public interface KaryawanDAO {
 
     int countAktif();
 
-    // Overloaded search methods (Lab PBO Compliance)
+ 
     List<Karyawan> search(String keyword);
 
     List<Karyawan> search(String keyword, String peran);

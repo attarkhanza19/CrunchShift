@@ -23,9 +23,6 @@ import com.crunchshift.model.Shift;
 
 import java.util.List;
 
-/**
- * Controller untuk modul Admin Pusat: manajemen data master, analitik global, dan monitoring.
- */
 public class AdminPusatController {
 
     private final KaryawanDAO karyawanDAO;

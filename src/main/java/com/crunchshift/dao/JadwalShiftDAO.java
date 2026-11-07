@@ -4,9 +4,7 @@ import com.crunchshift.model.JadwalShift;
 import java.time.LocalDate;
 import java.util.List;
 
-/**
- * Interface DAO untuk Penjadwalan Shift Karyawan.
- */
+
 public interface JadwalShiftDAO {
 
     List<JadwalShift> findAll();
@@ -25,7 +23,7 @@ public interface JadwalShiftDAO {
 
     boolean delete(int idJadwal);
 
-    // Overloaded search methods (Lab PBO Compliance)
+
     List<JadwalShift> cariJadwal(int idKaryawan);
 
     List<JadwalShift> cariJadwal(int idKaryawan, LocalDate tanggal);

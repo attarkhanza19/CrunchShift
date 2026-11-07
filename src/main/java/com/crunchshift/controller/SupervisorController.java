@@ -24,10 +24,6 @@ import com.crunchshift.util.DateUtil;
 import java.time.LocalDate;
 import java.util.List;
 
-/**
- * Controller untuk modul Supervisor: Verifikasi absensi & foto, verifikasi log serah terima,
- * serta evaluasi/apresiasi Crunch Points.
- */
 public class SupervisorController {
 
     private final JadwalShiftDAO jadwalShiftDAO;

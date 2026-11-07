@@ -5,11 +5,7 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.plaf.metal.MetalLookAndFeel;
 
-/**
- * Titik masuk utama (Entry Point) aplikasi desktop CrunchShift.
- * Memenuhi standar Lab PBO: hanya mengonfigurasi Look & Feel (MetalLookAndFeel)
- * dan membuka jendela utama LoginFrame tanpa business logic.
- */
+
 public class Main {
 
     public static void main(String[] args) {

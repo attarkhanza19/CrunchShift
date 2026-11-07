@@ -1,9 +1,6 @@
 package com.crunchshift.model;
 
-/**
- * Entitas Staff lini kerja/operator, subclass dari Karyawan.
- * Memiliki saldo Crunch Points untuk sistem gamifikasi.
- */
+
 public class Staff extends Karyawan {
 
     private int idStaff;

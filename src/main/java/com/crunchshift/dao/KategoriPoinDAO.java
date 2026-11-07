@@ -3,9 +3,7 @@ package com.crunchshift.dao;
 import com.crunchshift.model.KategoriPoin;
 import java.util.List;
 
-/**
- * Interface DAO untuk Kategori Crunch Points.
- */
+
 public interface KategoriPoinDAO {
 
     List<KategoriPoin> findAll();

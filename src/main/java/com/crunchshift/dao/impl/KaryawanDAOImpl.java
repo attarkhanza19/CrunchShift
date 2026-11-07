@@ -15,14 +15,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Implementasi DAO untuk entitas Karyawan dengan pemetaan polimorfisme ke Admin, Supervisor, dan Staff.
- * Selaras dengan skema database crunchshift_db:
- * - karyawan: id_karyawan, nama_lengkap, email, password, jenis_karyawan, status_akun
- * - admin: id_karyawan, departemen, tingkat_akses
- * - supervisor: id_karyawan, area_supervisi, shift_supervisi
- * - staff: id_karyawan, divisi, bagian_kerja
- */
+
 public class KaryawanDAOImpl implements KaryawanDAO {
 
     @Override
@@ -50,7 +43,7 @@ public class KaryawanDAOImpl implements KaryawanDAO {
         return null;
     }
 
-    /** Ganti kata sandi sendiri: sandi lama wajib sesuai dan akun harus aktif. */
+  
     public boolean ubahPasswordSendiri(int idKaryawan, String lama, String baru) {
         if (idKaryawan <= 0 || lama == null || baru == null || baru.length() < 5) return false;
         String sql = "UPDATE karyawan SET password = ? WHERE id_karyawan = ? "
@@ -64,7 +57,7 @@ public class KaryawanDAOImpl implements KaryawanDAO {
     }
 
 
-    /** Dipertahankan untuk kompatibilitas pemanggil lama. */
+
     public boolean ubahPasswordStaff(int idKaryawan, String lama, String baru) {
         return ubahPasswordSendiri(idKaryawan, lama, baru);
     }
@@ -229,7 +222,7 @@ public class KaryawanDAOImpl implements KaryawanDAO {
                 ps.executeUpdate();
             }
 
-            // Tidak menghapus subtype yang masih mempunyai referensi transaksi.
+
             if (!peranSebelum.equalsIgnoreCase(karyawan.getPeran())) {
                 String tabelLama = "Admin".equals(peranSebelum) ? "admin" :
                         "Supervisor".equals(peranSebelum) ? "supervisor" :
@@ -292,7 +285,7 @@ public class KaryawanDAOImpl implements KaryawanDAO {
             try {
                 conn.rollback();
             } catch (SQLException ex) {
-                // Ignore rollback ex
+               
             }
             System.err.println("Gagal menghapus karyawan: " + e.getMessage());
             return false;
@@ -300,7 +293,7 @@ public class KaryawanDAOImpl implements KaryawanDAO {
             try {
                 conn.setAutoCommit(true);
             } catch (SQLException e) {
-                // Ignore
+                
             }
         }
     }
@@ -458,7 +451,7 @@ public class KaryawanDAOImpl implements KaryawanDAO {
                     }
                 }
 
-                // Hitung saldo poin dinamis dari crunch_points
+                
                 String sqlPoin = "SELECT COALESCE(SUM(jumlah_poin), 0) FROM crunch_points WHERE staff_id_karyawan = ? AND status_verifikasi = 'Disetujui'";
                 try (PreparedStatement psPoin = conn.prepareStatement(sqlPoin)) {
                     psPoin.setInt(1, id);

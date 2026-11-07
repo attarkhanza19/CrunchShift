@@ -20,9 +20,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Controller untuk modul Admin Cabang: operasional cabang, penjadwalan bebas konflik, dan rekapitulasi.
- */
 public class AdminCabangController {
 
     private final KaryawanDAO karyawanDAO;
@@ -68,7 +65,6 @@ public class AdminCabangController {
             return false;
         }
 
-        // Conflict check: cegah double booking karyawan pada tanggal yang sama
         if (jadwalShiftDAO.existsJadwal(idKaryawan, tanggal)) {
             return false;
         }

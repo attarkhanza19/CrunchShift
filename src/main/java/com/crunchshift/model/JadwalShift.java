@@ -2,18 +2,16 @@ package com.crunchshift.model;
 
 import java.time.LocalDate;
 
-/**
- * Entitas Penjadwalan Shift Karyawan.
- */
+
 public class JadwalShift {
 
     private int idJadwal;
     private int idKaryawan;
     private int idShift;
     private LocalDate tanggal;
-    private String statusPlot; // 'Terjadwal', 'Selesai', 'Batal'
+    private String statusPlot; 
 
-    // Transient helper fields untuk tampilan tabel/GUI
+    
     private String namaKaryawan;
     private String namaShift;
     private String jamShift;

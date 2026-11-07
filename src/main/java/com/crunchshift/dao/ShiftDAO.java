@@ -3,9 +3,7 @@ package com.crunchshift.dao;
 import com.crunchshift.model.Shift;
 import java.util.List;
 
-/**
- * Interface DAO untuk pengelolaan data Master Shift operasional.
- */
+
 public interface ShiftDAO {
 
     List<Shift> findAll();

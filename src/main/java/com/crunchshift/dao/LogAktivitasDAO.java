@@ -4,9 +4,7 @@ import com.crunchshift.model.LogAktivitas;
 import java.time.LocalDate;
 import java.util.List;
 
-/**
- * Interface DAO untuk Log Aktivitas dan Handover Shift.
- */
+
 public interface LogAktivitasDAO {
 
     List<LogAktivitas> findAll();
@@ -19,7 +17,7 @@ public interface LogAktivitasDAO {
 
     boolean updateVerifikasi(int idLog, String statusVerifikasi, String catatanSupervisor);
 
-    // Overloaded search methods (Lab PBO Compliance)
+
     List<LogAktivitas> cariLog(int idKaryawan);
 
     List<LogAktivitas> cariLog(int idKaryawan, LocalDate tanggal);

@@ -1,8 +1,6 @@
 package com.crunchshift.model;
 
-/**
- * Entitas Kategori Crunch Points gamifikasi.
- */
+
 public class KategoriPoin {
 
     private int idKategori;

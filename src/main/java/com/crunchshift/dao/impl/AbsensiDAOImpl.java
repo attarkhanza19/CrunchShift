@@ -17,12 +17,7 @@ import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Implementasi DAO untuk Presensi Absensi Karyawan.
- * Selaras dengan tabel absensi (id_absensi, waktu_masuk, waktu_keluar, status_kehadiran,
- * keterangan_absen, status_verifikasi, jadwal_shift_id_jadwal, absen_masuk, absen_keluar)
- * terhubung via jadwal_shift.
- */
+
 public class AbsensiDAOImpl implements AbsensiDAO {
 
     private static final String BASE_SELECT =
@@ -192,7 +187,7 @@ public class AbsensiDAOImpl implements AbsensiDAO {
         return false;
     }
 
-    /** Pengajuan izin staff berdasarkan jadwal miliknya, hanya bila belum ada presensi. */
+
     public boolean ajukanIzin(int idKaryawan, int idJadwal, String alasan) {
         if (idKaryawan <= 0 || idJadwal <= 0 || alasan == null || alasan.trim().isEmpty() || alasan.length() > 200) return false;
         String sql = "INSERT INTO absensi (jadwal_shift_id_jadwal, waktu_masuk, waktu_keluar, "
@@ -210,7 +205,7 @@ public class AbsensiDAOImpl implements AbsensiDAO {
         } catch (SQLException e) { throw new IllegalStateException("Gagal mengajukan izin: " + e.getMessage(), e); }
     }
 
-    /** Koreksi kehadiran oleh Supervisor tanpa menghilangkan histori presensi. */
+
     public boolean koreksiKehadiran(int idAbsensi, String status, String alasan) {
         if (idAbsensi <= 0 || !java.util.Arrays.asList("Hadir", "Terlambat", "Izin", "Tidak Hadir").contains(status)
                 || alasan == null || alasan.isBlank() || alasan.length() > 200) return false;
@@ -223,7 +218,7 @@ public class AbsensiDAOImpl implements AbsensiDAO {
         } catch (SQLException e) {throw new IllegalStateException("Koreksi presensi gagal: " + e.getMessage(), e);}
     }
 
-    /** Penolakan hanya dapat diterapkan pada baris berstatus Izin. */
+
     public boolean tolakIzin(int idAbsensi, String alasan) {
         if (alasan == null || alasan.isBlank() || alasan.length() > 200) return false;
         String sql = "UPDATE absensi SET status_verifikasi = 'Ditolak', keterangan_absen = ? "
@@ -358,7 +353,7 @@ public class AbsensiDAOImpl implements AbsensiDAO {
         a.setNamaShift(rs.getString("nama_shift"));
         return a;
     }
-    /** Byte foto baru disimpan di MEDIUMBLOB; nama file lama tetap bisa dibaca. */
+ 
     private static void simpanBukti(PreparedStatement ps,int indeks,String nama) throws SQLException {
         if(nama == null || nama.isBlank()) throw new SQLException("Foto presensi wajib dipilih.");
         java.nio.file.Path path = java.nio.file.Path.of(System.getProperty("user.dir"),
@@ -380,7 +375,7 @@ public class AbsensiDAOImpl implements AbsensiDAO {
             return "DB_FOTO:"+id+":"+(masuk?"MASUK":"KELUAR");
         return new String(isi,java.nio.charset.StandardCharsets.UTF_8);
     }
-    /** Dapat dipakai Supervisor untuk membaca bukti BLOB secara langsung. */
+
     public byte[] ambilFoto(int id,boolean masuk) {
         String sql="SELECT "+(masuk?"absen_masuk":"absen_keluar")+" FROM absensi WHERE id_absensi=?";
         try(java.sql.Connection c=DatabaseConnection.getConnection()) {

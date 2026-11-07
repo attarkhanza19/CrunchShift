@@ -13,9 +13,7 @@ import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Implementasi DAO untuk Master Shift operasional pabrik.
- */
+
 public class ShiftDAOImpl implements ShiftDAO {
 
     @Override

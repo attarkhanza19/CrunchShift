@@ -2,10 +2,7 @@ package com.crunchshift.model;
 
 import java.time.ZonedDateTime;
 
-/**
- * Entitas Gamifikasi Crunch Points.
- * Mendukung transaksi 'Apresiasi' (poin bertambah) dan 'Evaluasi' (poin = 0 sebagai catatan evaluasi).
- */
+
 public class CrunchPoints {
 
     private int idPoin;
@@ -16,9 +13,9 @@ public class CrunchPoints {
     private String catatanApresiasi;
     private ZonedDateTime tanggalPemberian;
     private String statusVerifikasi = "Menunggu";
-    private String jenisTransaksi; // 'Apresiasi' atau 'Evaluasi'
+    private String jenisTransaksi;
 
-    // Transient helper fields untuk tampilan tabel/GUI
+    
     private String namaStaff;
     private String namaSupervisor;
     private String namaKategori;

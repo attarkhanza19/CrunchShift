@@ -3,9 +3,7 @@ package com.crunchshift.model;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-/**
- * Entitas Log Aktivitas & Handover Shift operasional pabrik.
- */
+
 public class LogAktivitas {
 
     private int idLog;
@@ -14,12 +12,12 @@ public class LogAktivitas {
     private LocalTime jamMulai;
     private LocalTime jamSelesai;
     private String deskripsiAktivitas;
-    private String statusVerifikasi; // 'Menunggu', 'Terverifikasi', 'Revisi'
+    private String statusVerifikasi; 
     private String catatanSupervisor;
     private String catatanRevisi;
     private String dokumentasiKegiatan;
 
-    // Transient helper fields untuk tampilan tabel/GUI
+    
     private String namaKaryawan;
 
     public LogAktivitas() {

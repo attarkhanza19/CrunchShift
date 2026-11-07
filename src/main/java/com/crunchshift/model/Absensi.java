@@ -3,10 +3,7 @@ package com.crunchshift.model;
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
 
-/**
- * Entitas Presensi Absensi Karyawan.
- * Mendukung pencatatan waktu nyata Asia/Makassar (WITA), verifikasi supervisor, dan anti-fraud foto.
- */
+
 public class Absensi {
 
     private int idAbsensi;
@@ -15,14 +12,14 @@ public class Absensi {
     private LocalDate tanggal;
     private ZonedDateTime waktuMasuk;
     private ZonedDateTime waktuKeluar;
-    private String statusKehadiran; // 'Hadir', 'Terlambat', 'Izin', 'Alpa'
-    private String statusVerifikasi; // 'Menunggu', 'Disetujui', 'Ditolak'
+    private String statusKehadiran; 
+    private String statusVerifikasi; 
     private String fotoMasuk;
     private String fotoKeluar;
     private String hashFoto;
     private String catatan;
 
-    // Transient helper fields untuk tampilan tabel/GUI
+  
     private String namaKaryawan;
     private String namaShift;
 

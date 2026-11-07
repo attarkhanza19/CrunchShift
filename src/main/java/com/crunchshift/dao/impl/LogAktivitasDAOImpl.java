@@ -15,11 +15,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Implementasi DAO untuk Log Aktivitas dan Handover Shift Karyawan.
- * Selaras dengan tabel log_aktivitas (id_log, tanggal_log, ringkasan_kegiatan, catatan_serah_terima,
- * dokumentasi_kegiatan, status_verifikasi, karyawan_id_karyawan).
- */
+
 public class LogAktivitasDAOImpl implements LogAktivitasDAO {
 
     private static final String BASE_SELECT =
@@ -31,7 +27,7 @@ public class LogAktivitasDAOImpl implements LogAktivitasDAO {
                     + "FROM log_aktivitas l "
                     + "JOIN karyawan k ON l.karyawan_id_karyawan = k.id_karyawan ";
 
-    /** Database lama belum tentu sudah menjalankan migrasi catatan_revisi. */
+    
     private boolean adaKolomRevisi(Connection conn) {
         try (ResultSet cols=conn.getMetaData().getColumns(conn.getCatalog(),null,"log_aktivitas","catatan_revisi")) {
             return cols.next();
@@ -180,14 +176,14 @@ public class LogAktivitasDAOImpl implements LogAktivitasDAO {
         return list;
     }
 
-    /** Staff hanya boleh memperbarui log milik sendiri yang masih Menunggu / Revisi. */
+    
     public boolean perbaruiLogStaff(int idLog, int idKaryawan, String ringkasan,
                                    String serahTerima, String dokumentasi) {
         if (idLog <= 0 || idKaryawan <= 0 || ringkasan == null || ringkasan.isBlank()
                 || serahTerima == null || serahTerima.isBlank()
                 || ringkasan.length() > 500 || serahTerima.length() > 500) return false;
         Connection conn = koneksiWajib();
-        // A staff member can still update their own daily log on an un-migrated database.
+        
         String sql = "UPDATE log_aktivitas SET ringkasan_kegiatan = ?, catatan_serah_terima = ?, "
                 + "dokumentasi_kegiatan = COALESCE(?, dokumentasi_kegiatan), "
                 + "status_verifikasi = 'Menunggu'" + (adaKolomRevisi(conn)?", catatan_revisi = NULL":"") + " "

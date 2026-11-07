@@ -14,13 +14,10 @@ import javax.swing.JTable;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.JTableHeader;
 
-/**
- * Helper utilitas untuk styling komponen UI CrunchShift.
- * Menyediakan palet warna resmi, font standar, dan metode styling antarmuka Swing Classic.
- */
+
 public class UIThemeStyler {
 
-    // ====== COLOR PALETTE ======
+    
     public static final Color BLEU_OCEAN = new Color(0x1b, 0x2a, 0x5c);       // #0a1680
     public static final Color BLEU_CIEL = new Color(0xe2, 0xe8, 0xf0);        // #93b2f8
     public static final Color BUTTER_YELLOW = new Color(0xff, 0xf6, 0xe8);    // #fbedb0
@@ -29,7 +26,7 @@ public class UIThemeStyler {
 
     public static final int DEFAULT_BUFFER_MINUTES = 15;
 
-    // ====== FONT ======
+ 
     public static final Font FONT_DEFAULT = new Font("Tahoma", Font.PLAIN, 12);
     public static final Font FONT_BOLD_12 = new Font("Tahoma", Font.BOLD, 12);
     public static final Font FONT_BOLD_14 = new Font("Tahoma", Font.BOLD, 14);

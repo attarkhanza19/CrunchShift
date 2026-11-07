@@ -16,11 +16,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Implementasi DAO untuk Gamifikasi Crunch Points.
- * Selaras dengan tabel crunch_points (id_poin, deskripsi_kontribusi, jumlah_poin,
- * status_verifikasi, tanggal_pengajuan, staff_id_karyawan, supervisor_id_karyawan, kategori_poin_id_kategori).
- */
+
 public class CrunchPointsDAOImpl implements CrunchPointsDAO {
 
     private static final String BASE_SELECT =
@@ -215,7 +211,7 @@ public class CrunchPointsDAOImpl implements CrunchPointsDAO {
     }
 
 
-    /** Pengajuan staf: tanpa memberikan saldo sebelum disetujui Supervisor. */
+    
     public boolean ajukanPoin(int idStaff, int idSupervisor, int idKategori, String kontribusi, int nilaiAcuan) {
         if (idStaff <= 0 || idSupervisor <= 0 || idKategori <= 0 || kontribusi == null || kontribusi.trim().isEmpty()) return false;
         String sql = "INSERT INTO crunch_points (staff_id_karyawan, supervisor_id_karyawan, kategori_poin_id_kategori, jumlah_poin, deskripsi_kontribusi, tanggal_pengajuan, status_verifikasi) VALUES (?,?,?,?,?,CURDATE(),'Menunggu')";
@@ -229,7 +225,7 @@ public class CrunchPointsDAOImpl implements CrunchPointsDAO {
         } catch(SQLException ex) { throw new IllegalStateException("Pengajuan poin gagal: " + ex.getMessage(),ex); }
     }
 
-    /** Hanya permohonan Menunggu yang dapat diputuskan ulang. */
+  
     public boolean putuskanPoin(int idPoin, int idSupervisor, String keputusan) {
         if (!"Disetujui".equals(keputusan) && !"Ditolak".equals(keputusan)) throw new IllegalArgumentException("Status tidak valid");
         String sql="UPDATE crunch_points SET status_verifikasi=? WHERE id_poin=? AND supervisor_id_karyawan=? AND status_verifikasi='Menunggu'";
@@ -242,7 +238,7 @@ public class CrunchPointsDAOImpl implements CrunchPointsDAO {
         } catch(SQLException ex) {throw new IllegalStateException("Verifikasi poin gagal: " + ex.getMessage(),ex);}
     }
 
-    /** Ubah evaluasi yang dibuat atau ditangani Supervisor ini. */
+  
     public boolean ubahEvaluasi(int idPoin, int supervisorId, String deskripsi, int poin, String status) {
         if (idPoin <= 0 || supervisorId <= 0 || deskripsi == null || deskripsi.isBlank()
                 || deskripsi.length() > 500 || !java.util.Arrays.asList(0, 25, 50, 75, 100).contains(poin)

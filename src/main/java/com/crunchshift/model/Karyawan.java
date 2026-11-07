@@ -1,9 +1,6 @@
 package com.crunchshift.model;
 
-/**
- * Superclass abstrak untuk semua entitas karyawan dalam sistem CrunchShift.
- * Memenuhi prinsip OOP Abstraction, Encapsulation, dan Inheritance.
- */
+
 public abstract class Karyawan {
 
     private int idKaryawan;
@@ -29,10 +26,7 @@ public abstract class Karyawan {
         this.statusAktif = statusAktif;
     }
 
-    /**
-     * Metode abstrak polimorfis untuk menampilkan deskripsi peran spesifik.
-     * Harus diimplementasikan oleh setiap subclass (Admin, Supervisor, Staff).
-     */
+    
     public abstract String getDeskripsiPeran();
 
     public int getIdKaryawan() {

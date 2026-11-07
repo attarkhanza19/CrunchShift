@@ -5,9 +5,6 @@ import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.util.List;
 
-/**
- * Interface DAO untuk Presensi Absensi Karyawan.
- */
 public interface AbsensiDAO {
 
     List<Absensi> findAll();
@@ -28,7 +25,7 @@ public interface AbsensiDAO {
 
     double hitungPersentaseKehadiranHariIni();
 
-    // Overloaded search methods (Lab PBO Compliance)
+    
     List<Absensi> cariAbsensi(int idKaryawan);
 
     List<Absensi> cariAbsensi(int idKaryawan, LocalDate tanggal);

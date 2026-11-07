@@ -12,10 +12,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Implementasi DAO untuk Kategori Crunch Points.
- * Selaras dengan tabel kategori_poin (id_kategori, nama_kategori, nilai_acuan, keterangan, admin_id_karyawan).
- */
+
 public class KategoriPoinDAOImpl implements KategoriPoinDAO {
 
     @Override

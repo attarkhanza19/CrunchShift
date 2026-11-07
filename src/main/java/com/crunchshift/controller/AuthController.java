@@ -6,9 +6,7 @@ import com.crunchshift.dao.impl.KaryawanDAOImpl;
 import com.crunchshift.model.Admin;
 import com.crunchshift.model.Karyawan;
 
-/**
- * Controller untuk menangani proses autentikasi, validasi login, dan routing frame awal.
- */
+
 public class AuthController {
 
     private final KaryawanDAO karyawanDAO;

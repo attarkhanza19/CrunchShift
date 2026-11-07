@@ -1,14 +1,11 @@
 package com.crunchshift.model;
 
-/**
- * Entitas Administrator sistem, subclass dari Karyawan.
- * Membedakan tingkatan akses Pusat vs Cabang dan departemen.
- */
+
 public class Admin extends Karyawan {
 
     private int idAdmin;
-    private String departemen; // 'administrasi', 'produksi', 'logistik'
-    private String tingkatanAkses; // 'Pusat' atau 'Cabang'
+    private String departemen; 
+    private String tingkatanAkses; 
 
     public Admin() {
         super();
